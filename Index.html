@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Media Queries</title>
+    <style>
+        .body{
+                margin:0px;
+                padding:0px;
+                background-color:  #f2f2f2;
+            }
+            .heading
+            {
+                color: white;
+                background-color:#080837;
+                margin-top:0px;
+                border: none
+                padding: 5px;
+                text-align: center;
+             position: relative;  
+            }
+            .logo{
+              
+            
+              
+
+            }
+            .login
+            {
+               
+               
+                height: 80px
+                width: 100%;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 150px;              
+                margin-right: 800px;
+                display: flex;
+                flex-direction:column;
+
+            }
+            
+            .btn
+            {
+                height: 45px;
+                width: 140px;
+                border-radius: 20px;
+                background-color:	 #ffaa00 ;
+                padding: 10px;
+                border: none;
+                box-shadow: 1px 1px 1px 1pxV(10, 0, 0);
+            
+            } 
+            .btn2{
+                height: 45px;
+                width: 140px;
+                border-radius: 20px;
+                background-color: #cc33ff;
+                padding: 10px;
+                border: none;
+                box-shadow: 1px 1px 1px 1px 1pxV(10, 0, 0);
+            }
+            .btn:hover
+            {
+                border-radius: 20px;
+        transition: 0.5s;
+        background-color:#80ff80; 
+            }
+        .btn2:hover
+        {
+            border-radius: 20px;
+        transition: 0.5s;
+        background-color:#80ff80; 
+
+        }
+        .box{
+            height: 120px;
+            width: 500px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 20px;
+           display: flexbox;
+           flex-direction: row;
+          justify-content: space-between;
+          padding: 10px 20px;
+          margin-top: 25px;
+          box-shadow: 0px 0px 10px 8px #c2c2d6;
+          font-family:   "EB Garamond", serif;
+            
+         
+        }
+        .img{
+            padding-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        
+
+        }
+        .img:hover
+        {
+           
+
+        }
+        .txt1
+        {
+            text-align: center;
+        }
+        .flex{
+            position: absolute;
+            top: 100px;
+            left: 900px;
+
+           
+        }
+        .row
+        {
+            background-color: #ffffff;
+            margin: 50px;
+            margin-left:125px ;
+            height: 200px;
+            width: 1250px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 8px #c2c2d6;
+
+            position: relative;
+            top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            bottom: 50px;
+           
+          
+
+        }
+        .conatiner
+        {
+            height: 200px;
+            width: 200px;
+            background-color:white;
+            position: relative;
+
+        }
+        .imgs
+        {
+            
+            margin-left: 50px;
+            margin-right: auto;
+            position: absolute;
+            margin: 65px;
+
+        }
+        .txt{
+            color:rgb(41, 41, 41);
+            position: absolute;
+            margin-top: 150px;
+            left: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+        }
+        @media screen and (max-width: 600px)
+        /* small devices */
+        {
+            .heading
+            {
+                color: white;
+                background-color:#080837;
+                margin-top:0px;
+                border: none
+                padding: 0px;
+                text-align:start;
+             position: relative;
+             font-size: 20px;  
+             top: 20px;
+             flex-wrap: wrap;
+             
+            
+             
+            }
+            .logo{
+            height: 30px;
+            width: 30px;
+            position: relative;
+            top: 5px;
+            flex-wrap: wrap;
+            }
+            .btn {
+                height: 30px;
+                width: 100px;
+                border-radius: 20px;
+                background-color:	 #ffaa00 ;
+                padding: 10px;
+                border: none;
+                font-size: 10px;
+                box-shadow: 1px 1px 1px 1pxV(10, 0, 0);
+                position: relative;
+                flex-wrap: wrap;
+                
+            }
+    
+            .btn2{
+                height: 30px;
+                width: 100px;
+                border-radius: 20px;
+                background-color: #cc33ff;
+                padding: 10px;
+                border: none;
+                box-shadow: 1px 1px 1px 1px 1pxV(10, 0, 0);
+                font-size: 10px;
+                flex-wrap: wrap;
+                position:absolute;
+                margin-top:10px
+            }
+        .login
+            {
+            display: inline;
+            height: 80px
+                width: 100%;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 150px;              
+                margin-right: 800px;
+                font-size:10px;
+                position: relative;
+                left:10px;
+            }
+    }
+        @media screen and (max-width: 7690px) and (max-width:992px)
+         /* normal devices */
+        {
+            .heading
+            {
+                color: white;
+                background-color:#080837;
+                margin-top:0px;
+                border: none
+                padding: 0px;
+                text-align:start;
+             position: relative;
+             font-size: 20px;  
+             top: 20px;
+             flex-wrap: wrap;
+             
+            
+             
+            }
+            .logo{
+            height: 30px;
+            width: 30px;
+            position: relative;
+            top: 5px;
+            flex-wrap: wrap;
+            }
+            .btn {
+                height: 30px;
+                width: 100px;
+                border-radius: 20px;
+                background-color:	 #ffaa00 ;
+                padding: 10px;
+                border: none;
+                font-size: 10px;
+                box-shadow: 1px 1px 1px 1pxV(10, 0, 0);
+                position: relative;
+                flex-wrap: wrap;
+                
+            }
+    
+            .btn2{
+                height: 30px;
+                width: 100px;
+                border-radius: 20px;
+                background-color: #cc33ff;
+                padding: 10px;
+                border: none;
+                box-shadow: 1px 1px 1px 1px 1pxV(10, 0, 0);
+                font-size: 10px;
+                flex-wrap: wrap;
+                margin-top: 0px;
+            }
+        .login
+            {
+            display: inline;
+            height: 80px
+                width: 100%;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 150px;              
+                margin-right: 800px;
+                font-size:10px;
+                position: relative;
+                left:10px;
+            }
+    }
+    @media screen and (min-width: 993px) and (max-width:1200px) 
+{
+    /* tablet devices */
+            .heading
+            {
+                color: white;
+                background-color:#080837;
+                margin-top:0px;
+                border: none
+                padding: 0px;
+                text-align:center;
+             position: relative;
+             font-size: 35px;  
+             top: 20px;
+             flex-wrap: wrap;
+             
+            
+             
+            }
+            .logo{
+            height: 30px;
+            width: 30x;
+            position: relative;
+            top: 5px;
+            flex-wrap: wrap;
+            left:5pxpx;
+            }
+            .btn {
+                height: 35px;
+                width: 110px;
+                border-radius: 20px;
+                background-color:	 #ffaa00 ;
+                padding: 10px;
+                border: none;
+                font-size: 10px;
+                box-shadow: 1px 1px 1px 1pxV(10, 0, 0);
+                position: relative;
+                flex-wrap: wrap;
+                
+            }
+    
+            .btn2{
+                height: 35px;
+                width: 110px;
+                border-radius: 20px;
+                background-color: #cc33ff;
+                padding: 10px;
+                border: none;
+                box-shadow: 1px 1px 1px 1px 1pxV(10, 0, 0);
+                font-size: 10px;
+                margin-top: 0px;
+               
+            }
+        .login
+            {
+            display: inline;
+            height: 80px
+                width: 100%;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 150px;              
+                margin-right: 800px;
+                font-size:20px;
+                position: relative;
+                left: 20px;
+            }
+            .box{
+            height: 90px;
+            width: 400px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 20px;
+           display: flex;
+           flex-direction: row;
+          justify-content: space-between;
+          padding: 10px 20px;
+          box-shadow: 0px 0px 10px 8px #c2c2d6;
+          font-family:   "EB Garamond", serif;
+          margin-left: -880px;
+          margin-top: 400px;
+          
+
+        }
+        .img{
+            padding-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        
+
+        }
+        .img:hover
+        {
+           
+
+        }
+        .txt1
+        {
+            text-align: center;
+            font: 10px;
+        }
+        .flex{
+            position: absolute;
+            top: 100px;
+            left: 900px;
+
+           
+        }
+        .row
+        {
+            background-color: #ffffff;
+            margin:5px;
+            margin-left:0px ;
+            height: 200px;
+            width: 1250px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 8px #c2c2d6;
+
+            position: relative;
+            top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            bottom: 50px;
+            left: 10px;
+           
+          
+
+        }
+        .conatiner
+        {
+            height: 200px;
+            width: 200px;
+            background-color:white;
+            position: relative;
+
+        }
+        .imgs
+        {
+            
+            margin-left: 50px;
+            margin-right: auto;
+            position: absolute;
+            margin: 65px;
+
+        }
+        .txt{
+            color:rgb(41, 41, 41);
+            position: absolute;
+            margin-top: 150px;
+            left: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+        
+        }
+    }
+    @media screen and (min-width:1201px) 
+{
+    /* desktop devices */
+    .heading
+            {
+                color: white;
+                background-color:#080837;
+                margin-top:0px;
+                border: none
+                padding: 5px;
+                text-align: center;
+             position: relative;  
+            }
+            .logo{
+              
+            
+              
+
+            }
+            .login
+            {
+               
+               
+                height: 80px
+                width: 100%;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 150px;              
+                margin-right: 800px;
+                display: inline;
+                flex-direction:column;
+                position: relative;
+                left: 20px;
+
+            }
+            
+            .btn
+            {
+                height: 45px;
+                width: 140px;
+                border-radius: 20px;
+                background-color:	 #ffaa00 ;
+                padding: 10px;
+                border: none;
+                box-shadow: 1px 1px 1px 1pxV(10, 0, 0);
+            
+            } 
+            .btn2{
+                height: 45px;
+                width: 140px;
+                border-radius: 20px;
+                background-color: #cc33ff;
+                padding: 10px;
+                border: none;
+                box-shadow: 1px 1px 1px 1px 1pxV(10, 0, 0);
+            }
+            .btn:hover
+            {
+                border-radius: 20px;
+        transition: 0.5s;
+        background-color:#80ff80; 
+            }
+        .btn2:hover
+        {
+            border-radius: 20px;
+        transition: 0.5s;
+        background-color:#80ff80; 
+
+        }
+        .box{
+            height: 120px;
+            width: 500px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 20px;
+           display: flexbox;
+           flex-direction: row;
+          justify-content: space-between;
+          padding: 10px 20px;
+          margin-top: 25px;
+          box-shadow: 0px 0px 10px 8px #c2c2d6;
+          font-family:   "EB Garamond", serif;
+          margin-left: -100px;
+
+        }
+        .img{
+            padding-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        
+
+        }
+        .img:hover
+        {
+           
+
+        }
+        .txt1
+        {
+            text-align: center;
+        }
+        .flex{
+            position: absolute;
+            top: 100px;
+            left: 900px;
+
+           
+        }
+        .row
+        {
+            background-color: #ffffff;
+            margin:5px;
+            margin-left:0px ;
+            height: 200px;
+            width: 1250px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 8px #c2c2d6;
+
+            position: relative;
+            top: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            bottom: 50px;
+            left: 10px;
+           
+          
+
+        }
+        .conatiner
+        {
+            height: 200px;
+            width: 200px;
+            background-color:white;
+            position: relative;
+
+        }
+        .imgs
+        {
+            
+            margin-left: 50px;
+            margin-right: auto;
+            position: absolute;
+            margin: 65px;
+
+        }
+        .txt{
+            color:rgb(41, 41, 41);
+            position: absolute;
+            margin-top: 150px;
+            left: 35px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 300;
+        
+        }
+    }
+    </style>
+</head>
+<body>
+    <body class="body"> 
+        <h1 class="heading"> <img class="logo" src="road-removebg-preview.png" height="50px" width="50px"><b> 
+            <br>Road To Code</b></h1>
+    
+        <div class="login">
+            <p >
+            <h1>
+                Quality courses at affordable pricing, trusted by 2000+ students.
+            </h1>
+            <h4>We help you to learn the latest technologies and tools to kickstart your career in tech.</h4>
+            <h2 style=" color:    #00cc00"><b>Learn, Practice, Master and Achieve.</h2>
+            </p>
+            <button class="btn">
+                🚀Courses
+            </button> &nbsp; &nbsp;  &nbsp; 
+             <button class="btn2">
+                🔐Login
+            </button>
+            <br>
+          
+        </div>
+    
+    
+</body>
+</html>
